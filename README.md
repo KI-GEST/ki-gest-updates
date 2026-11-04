@@ -1,3 +1,6 @@
+Bientot : version 2026.11.04 (en preparation) :
+- Nouveau module Cout de Revient : charges accessoires validees et reparties sur les articles, consultation du cout par article/depot avec historique des variations, ajustement manuel motive et reinitialisation, simulateur full costing, analyse des marges, valorisation du stock au cout de revient.
+- Manuel client PDF du module Cout de Revient integre a l'application (bouton « Manuel PDF » dans le Simulateur).
 Nouveautes de la version 2026.11.03 :
 - Mise a jour obligatoire : cette version doit etre installee immediatement (banniere rouge, pas d'option « Plus tard »).
 - Encaissements et Decaissements : les factures / BL a regler se choisissent desormais via une liste a cases a cocher ; on peut importer plusieurs documents d'un coup en un seul enregistrement.
