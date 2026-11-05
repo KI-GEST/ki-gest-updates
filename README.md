@@ -1,6 +1,12 @@
-Bientot : version 2026.11.04 (en preparation) :
+Nouveautes de la version 2026.11.05.1 (version finale) :
+- Mise a jour par fichier (delta) : le poste ne telecharge plus le package complet, seulement les fichiers recents (quelques Mo au lieu de ~90 Mo). Desormais, chaque nouvelle publication ne transfere que les fichiers modifies ou supprimes.
+- Fenetre flottante de progression : apres le clic « Mettre a jour », la page de connexion affiche au centre de l'ecran le pourcentage de telechargement et d'installation, fichier par fichier.
+- Installation a 100 % : en fin de telechargement, le serveur IIS redemarre automatiquement et le cache du navigateur est purge ; a la reconnexion, le poste affiche immediatement la nouvelle version.
+- Notification de mise a jour : « Plus tard » n'est plus un refus definitif ; le bandeau se represente de lui-meme au bout de 5 minutes et pour chaque nouvelle version publiee.
+- Reparation : erreur « Aucune source de mise a jour valide » quand une release GitHub avait ete regeneree sans changer de numero ; le manifest est desormais re-sonde en frais avant chaque installation.
 - Nouveau module Cout de Revient : charges accessoires validees et reparties sur les articles, consultation du cout par article/depot avec historique des variations, ajustement manuel motive et reinitialisation, simulateur full costing, analyse des marges, valorisation du stock au cout de revient.
 - Manuel client PDF du module Cout de Revient integre a l'application (bouton « Manuel PDF » dans le Simulateur).
+
 Nouveautes de la version 2026.11.03 :
 - Mise a jour obligatoire : cette version doit etre installee immediatement (banniere rouge, pas d'option « Plus tard »).
 - Encaissements et Decaissements : les factures / BL a regler se choisissent desormais via une liste a cases a cocher ; on peut importer plusieurs documents d'un coup en un seul enregistrement.
