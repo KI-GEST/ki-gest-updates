@@ -1,4 +1,5 @@
-Nouveautes de la version 2026.11.05.2 : TEST
+Nouveautes de la version 2026.11.05.2 : Correction SQL
+
 Nouveautes de la version 2026.11.05.1 (version finale) :
 - Mise a jour par fichier (delta) : le poste ne telecharge plus le package complet, seulement les fichiers recents (quelques Mo au lieu de ~90 Mo). Desormais, chaque nouvelle publication ne transfere que les fichiers modifies ou supprimes.
 - Fenetre flottante de progression : apres le clic « Mettre a jour », la page de connexion affiche au centre de l'ecran le pourcentage de telechargement et d'installation, fichier par fichier.
