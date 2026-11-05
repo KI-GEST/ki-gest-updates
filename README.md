@@ -1,4 +1,4 @@
-Nouveautes de la version 2026.11.05.2 : Correction SQL
+Nouveautes de la version 2026.11.05.3 : Correction SQL + Acomptes & facturation sur echeancier : echeancier de la commande client, generations de factures d'acompte (AC) aux echeances dues, detraquement des acomptes sur la facture de solde. Blocage credit a la validation avec levee par derogation superviseur (code + motif, audit, interrupteur dans Parametres).
 
 Nouveautes de la version 2026.11.05.1 (version finale) :
 - Mise a jour par fichier (delta) : le poste ne telecharge plus le package complet, seulement les fichiers recents (quelques Mo au lieu de ~90 Mo). Desormais, chaque nouvelle publication ne transfere que les fichiers modifies ou supprimes.
