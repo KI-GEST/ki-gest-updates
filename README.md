@@ -1,3 +1,11 @@
+Nouveautes de la version 2026.11.06 :
+- Devis et commandes, client comme fournisseur : le bouton « Supprimer » devient « Annuler ». Le document reste au repertoire avec le statut Annulee (tracabilite) au lieu d'etre efface ; l'annulation est refusee sur un document deja valide ou deja annule.
+- Liste articles : un bouton « Colonnes » place dans l'en-tete, a cote du titre, ouvre le selecteur de colonnes. Chacun choisit les colonnes affichees (famille, categorie, unites, conversions, TVA, prix achat, stock min/max, gestion par lot...), Code et Designation restant toujours visibles. « Tout afficher» reactive toutes les colonnes, la croix ou la touche Echap referment le panneau, et le choix est memorise sur le poste.
+- Recherche globale : les articles trouves s'affichent en tableau (code, designation, stock disponible, prix vente HT, statut) directement dans le combobox, sans deplacer la fenetre vers la liste.
+- Recherche globale : un clic sur un article ouvre une fenetre flottante avec sa fiche complete - donnees (code a barres, QR, famille, categorie, unites, TVA, statut), prix (achat et vente, HT et TTC, marge) et stock (total, valeur, cout moyen pondere, detail par depot avec lots et peremptions) - et un bouton « Modifier dans Liste articles ».
+- Recherche globale : un clic sur un document, un client ou un fournisseur ouvre desormais la page concernee dans un onglet de l'espace de travail, comme le fait le menu lateral, au lieu de recharger toute la fenetre et de fermer les onglets ouverts.
+- Stock actuel : la colonne « Cout moyen » est remplacee par « Prix vente HT » et une colonne « Prix achat HT » est ajoutee ; la statistique « Valeur stock » se calcule sur le prix achat HT ; la devise n'est plus repetee dans chaque colonne de prix.
+
 Nouveautes de la version 2026.11.05.3 : Correction SQL + Acomptes & facturation sur echeancier : echeancier de la commande client, generations de factures d'acompte (AC) aux echeances dues, detraquement des acomptes sur la facture de solde. Blocage credit a la validation avec levee par derogation superviseur (code + motif, audit, interrupteur dans Parametres).
 
 Nouveautes de la version 2026.11.05.1 (version finale) :
