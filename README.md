@@ -1,3 +1,11 @@
+Nouveautes de la version 2026.11.06.2 :
+- TEJ : TauxTVA et MontantTVA sont desormais ecrits dans chaque operation, meme quand aucune taxe n'est due (0.00 et 0). Ces deux valeurs parfois absentes du fichier etaient refusees par la plateforme en erreur interne « Cannot read field "scale" because "val" is null ».
+- TEJ : nouveau champ « Matricule TEJ » dans Parametres > Societe, place pres du matricule fiscal. Renseigne, il devient l'identifiant du declarant (noeud Declarant et nom du fichier de depot) ; laisse vide, l'export conserve le matricule fiscal, comme avant.
+- Base de donnees : la colonne Societes.MatriculeTej est ajoutee par le script idempotent update-matricule-tej.sql (installation cliente et depot SQL manuel) et par l'application au demarrage. Les bases existantes se mettent a jour sans reinstallation.
+- Recherche globale : reservee aux roles Superviseur et Administrateur. Le champ est masque pour les autres comptes et le serveur refuse la requete (403) avec le message « Recherche reservee aux administrateurs. ».
+- Stock actuel : la colonne « Prix achat HT » et la statistique « Valeur stock » sont retirees de la liste ; la colonne « Valeur » reste affichee.
+- Validation locale (Test-TejXml.ps1) : signalement des commentaires XML, interdits sur un fichier deposes a la main, et controle de coherence entre le TTC des operations, les totaux et le timbre fiscal.
+
 Nouveautes de la version 2026.11.06.1 :
 - TEJ : le fichier de depot est nomme selon la regle officielle « MATRICULEFISCAL-EXERCICE-MOIS-CODEACTE.xml » (exemple 0001238L-2024-01-0.xml), aligne sur la periode et l'acte declares dans le contenu ; les exports modificatifs et annulatifs portent l'acte 1. Correction du refus « Le nom de fichier est invalide » sur tej.finances.gov.tn.
 - TEJ : les libelles du beneficiaire (raison sociale, adresse, activite) sont nettoies des caracteres interdits par le cahier des charges - accents translitteres, esperluette remplacee par « et », signes < > ; * " et doubles tirets retires ; les textes en arabe sont conserves tels quels.
