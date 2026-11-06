@@ -1,3 +1,11 @@
+Nouveautes de la version 2026.11.06.1 :
+- TEJ : le fichier de depot est nomme selon la regle officielle « MATRICULEFISCAL-EXERCICE-MOIS-CODEACTE.xml » (exemple 0001238L-2024-01-0.xml), aligne sur la periode et l'acte declares dans le contenu ; les exports modificatifs et annulatifs portent l'acte 1. Correction du refus « Le nom de fichier est invalide » sur tej.finances.gov.tn.
+- TEJ : les libelles du beneficiaire (raison sociale, adresse, activite) sont nettoies des caracteres interdits par le cahier des charges - accents translitteres, esperluette remplacee par « et », signes < > ; * " et doubles tirets retires ; les textes en arabe sont conserves tels quels.
+- TEJ : fichier telecharge en UTF-8 sans signature BOM, conforme a l'attendu de la plateforme.
+- TEJ : le nom affiche au telechargement reprend celui calcule par le serveur (export unitaire, export en lot et declaration groupee).
+- TEJ : matricule fiscal de la société invalide (7 chiffres + lettre attendus) = message d'erreur explicite au lieu d'un fichier refusé.
+- Validation locale (Test-TejXml.ps1) : controle du nom du fichier, coherence nom/contenu (declarant, periode, acte), signalement des caracteres speciaux et des sequences « 'OR/'AND » avant depot.
+
 Nouveautes de la version 2026.11.06 :
 - Devis et commandes, client comme fournisseur : le bouton « Supprimer » devient « Annuler ». Le document reste au repertoire avec le statut Annulee (tracabilite) au lieu d'etre efface ; l'annulation est refusee sur un document deja valide ou deja annule.
 - Liste articles : un bouton « Colonnes » place dans l'en-tete, a cote du titre, ouvre le selecteur de colonnes. Chacun choisit les colonnes affichees (famille, categorie, unites, conversions, TVA, prix achat, stock min/max, gestion par lot...), Code et Designation restant toujours visibles. « Tout afficher» reactive toutes les colonnes, la croix ou la touche Echap referment le panneau, et le choix est memorise sur le poste.
