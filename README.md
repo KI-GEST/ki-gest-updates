@@ -1,3 +1,5 @@
+Nouveautes de la version 2026.11.06.9 :
+L'admin peut supprimer BL Client deja valider restaurer la quantité à stock 
 Nouveautes de la version 2026.11.06.2 :
 - TEJ : TauxTVA et MontantTVA sont desormais ecrits dans chaque operation, meme quand aucune taxe n'est due (0.00 et 0). Ces deux valeurs parfois absentes du fichier etaient refusees par la plateforme en erreur interne « Cannot read field "scale" because "val" is null ».
 - TEJ : nouveau champ « Matricule TEJ » dans Parametres > Societe, place pres du matricule fiscal. Renseigne, il devient l'identifiant du declarant (noeud Declarant et nom du fichier de depot) ; laisse vide, l'export conserve le matricule fiscal, comme avant.
