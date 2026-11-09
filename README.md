@@ -1,3 +1,13 @@
+Nouveautes de la version 2026.11.09.1 :
+- Info societe sur tous les etats d'impression (facture, devis, commande, BL...) : chaque info sur sa ligne (Telephone, Email, Matricule Fiscale, RIB, Adresse), sans numerotation.
+- Fenetre de confirmation pour Valider / Facturer / Supprimer : question dynamique selon le type de document (ex. "Voulez-vous facturer la BL n° ... ?"), icone et bouton adaptes, support clavier (Echap/Entree). Seuls les boutons de la toolbar Valider/Supprimer concernes.
+- Facturer BL : detection correcte du bouton "Valider et Facturer" (data-livraison-toolbar-validate-facturer) et affichage de la question "Voulez-vous facturer la BL n° ... ?"
+- Suppression : question "Supprimer [type] n° ... ? Cette action est definitive."
+- Affichage du numero de document dans la confirmation (recherche dans ligne selectionnee .selected-row, fallback multi-patterns pour tous types de liste : BL, factures, commandes, devis, etc.)
+- Annulation : si l'utilisateur clique "Annuler", l'action est bien bloquee (preventDefault + stopImmediatePropagation AVANT l'attente).
+- Page Societe : les 5 champs cles (Telephone, Email, Matricule Fiscale, RIB, Adresse) passes en tete du formulaire, chacun sur pleine largeur.
+- Cache-busting : 2026.11.09.1
+
 Nouveautes de la version 2026.11.06.9 :
 L'admin peut supprimer BL Client deja valider restaurer la quantité à stock 
 
