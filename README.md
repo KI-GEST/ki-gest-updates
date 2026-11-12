@@ -1,3 +1,12 @@
+Nouveautes de la version 2026.11.12.3 :
+
+Impayes : une facture partiellement encaissee apparait DESORMAIS dans « Impayes clients et fournisseurs » avec le reste du. Avant, la tranche a venir annoncee sur l'encaissement (montant restant + prochaine date de paiement) etait deduite de la dette : la ligne disparaissait completement alors que le tiers devait toujours. La colonne « Planifie » indique la part deja programmee, la colonne « Reste » la dette reelle.
+Cout de revient : le simulateur calcule desormais le PRIX DE VENTE HT a partir du cout de revient, selon les quatre methodes : cout de revient + benefice, taux de marge (sur le cout de revient), taux de marque (sur le prix de vente) et coefficient multiplicateur. Le prix TTC est obtenu en appliquant la TVA, et le prix calcule peut etre reporte sur le simulateur.
+Etiquettes articles : le QR code est desormais un VRAI code QR (image PNG generee par l'application), lisible par un scanner a l'ecran comme sur l'etiquette imprimee. L'impression attend le chargement des images avant de s'ouvrir.
+Inventaire : la page « Nouvel inventaire » accepte PLUSIEURS articles en une seule saisie (une ligne par article, quantite par ligne, total en direct), toutes les lignes enregistrees en un clic.
+Mise a jour SQL : a chaque mise a jour, la structure de la base du poste est remise a jour automatiquement (nouvelles tables, nouveaux champs, index et references). Le script applique est rejouable : rien de ce qui existe deja n'est modifie et les donnees sont preservees.
+Cache-busting : le numero de version couvre desormais TOUS les assets locaux (feuilles de style et scripts de module, par exemple cout-revient.css), et plus seulement site.js / site.css / print.css. Apres une mise a jour, le navigateur ne peut plus resservir une ancienne feuille de style de module.
+Cache-busting : 2026.11.12.3
 Nouveautes de la version 2026.11.12.1 :
 
 Connexion SQL Server : la nouvelle connexion est TESTEE avant d'etre enregistree. En cas d'echec, rien n'est enregistre et la base actuelle reste active (aucun risque de rendre l'application inutilisable).
